@@ -11,7 +11,7 @@ root.title("Notes App")
 
 # Adding UI Elements
 label = tk.Label(root, text="Welcome to Notes!", font=('Times New Roman', 18))
-label.pack()
+label.pack(padx=15, pady=15)
 
 # Running the App
 root.mainloop()
