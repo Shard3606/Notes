@@ -1,17 +1,17 @@
-import tkinter
+import tkinter as tk
+
+root = tk.Tk()
 
 # System Settings
-tkinter.set_appearance_mode("System")
-tkinter.set_default_color_theme("black")
+
 
 # App Setup/Frame
-app = tkinter.tk()
-app.geometry("720x480")
-app.title("Notes")
+root.geometry("720x480")
+root.title("Notes App")
 
 # Adding UI Elements
-title = tkinter.tkLabel(app, text = "Welcome to Notes")
-title.pack()
+label = tk.Label(root, text="Welcome to Notes!", font=('Times New Roman', 18))
+label.pack()
 
 # Running the App
-app.mainloop(padx = 10, pady = 10)
+root.mainloop()
