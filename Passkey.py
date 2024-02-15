@@ -1,5 +1,4 @@
 import time
-import mysql.connector
 Username = ""
 Password = ""
 UsernameGuess = ""
@@ -13,10 +12,12 @@ def createaccount():
   if Username == "Back":
     AlrAcc()
   else:
+    #Save Username
     Password = input("Please create a password, or input 'Back' to go back.")
   if Password == "Back":
     AlrAcc()
   else:
+    #Save Password, attach to username
     time.sleep(3)
     AlrAcc()
 
@@ -33,6 +34,7 @@ def signintoaccount():
   if Password == "Back":
     AlrAcc()
   else:
+    #Check Database
     if UsernameGuess == Username and PasswordGuess == Password:
       Finish()
       time.sleep(3)
@@ -59,3 +61,5 @@ if Username == "" and Password == "":
   AlrAcc()
 else:
   signintoaccount()
+
+AlrAcc()
