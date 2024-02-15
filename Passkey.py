@@ -56,6 +56,8 @@ def AlrAcc():
 
 def Finish():
   print("Welcome...")
+  time.sleep(3)
+  import Notes
 
 if Username == "" and Password == "":
   AlrAcc()
