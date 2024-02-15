@@ -8,24 +8,43 @@ def CreateNote():
     print('\n')
     NoteText = input("Start writing!")
     #Save Note Text to Database
+    time.sleep(3)
     Welcome()
 
 def EditNote():
     global NoteList
     print(str(Notes))
     TempNoteName = input("What note would you like to edit?")
-    #Fetch Note
-    print(str(NoteText))
+    #Fetch Note list and note, print note, make editable
+    time.sleep(3)
+    Welcome()
 
 def ViewNote():
     global NoteList
     print(str(Notes))
     TempNoteName = input("What note would you like to view?")
+    #Fetch Note list and note, print note
 
 def DeleteNote():
     global NoteList
     print(str(Notes))
     TempNoteName = input("What note would you like to delete?")
+    #Fetch Note list and note, print note
+    Delete = input("Are you sure you want to delete this note? Write 'Y' if yes and 'N' if no.")
+    if Delete == "Y":
+        #Delete the note from the database
+        print("Deleting...")
+        time.sleep(3)
+        print("Done!")
+        time.sleep(3)
+        Welcome()
+    elif Delete == "N":
+        time.sleep(3)
+        Welcome()
+    else:
+        print("Please make sure you inputted one of the options.")
+        time.sleep(3)
+        DeleteNote()
 
 def Logout():
     print("Come back soon!")
