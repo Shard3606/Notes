@@ -1,5 +1,4 @@
 import time
-import Passkey
 Notes = []
 Selection = ""
 
@@ -30,7 +29,8 @@ def DeleteNote():
 
 def Logout():
     print("Come back soon!")
-    Passkey.run(["python", "other.py"])
+    import Passkey
+    #Passkey.run(["python", "other.py"])
 
 def Welcome():
     global Selection
