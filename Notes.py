@@ -29,8 +29,8 @@ def DeleteNote():
 
 def Logout():
     print("Come back soon!")
+    time.sleep(3)
     import Passkey
-    #Passkey.run(["python", "other.py"])
 
 def Welcome():
     global Selection
