@@ -6,6 +6,11 @@ Note2 = ["NoteName", "NoteText"]
 Note3 = ["NoteName", "NoteText"]
 Note4 = ["NoteName", "NoteText"]
 Note5 = ["NoteName", "NoteText"]
+Note1 = ["NoteName", "NoteText"]
+Note2 = ["NoteName", "NoteText"]
+Note3 = ["NoteName", "NoteText"]
+Note4 = ["NoteName", "NoteText"]
+Note5 = ["NoteName", "NoteText"]
 
 def CreateNote():
     global Note1
@@ -140,6 +145,8 @@ def ViewNote():
     #Fetch Note list and note, print note
     time.sleep(3)
     Welcome()
+    time.sleep(3)
+    Welcome()
 
 def DeleteNote():
     global NoteList
@@ -211,6 +218,8 @@ def DeleteNote():
         time.sleep(3)
         ViewNote()
     #Fetch Note list and note, print note
+    time.sleep(3)
+    Welcome()
     time.sleep(3)
     Welcome()
 
