@@ -3,7 +3,7 @@ Username = ""
 Password = ""
 UsernameGuess = ""
 PasswordGuess = ""
-AlreadyAccount = ""y
+AlreadyAccount = ""
 
 def createaccount():
   global Username
